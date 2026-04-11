@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System | Login</title>
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="library-dark-theme">
+    <!-- Blurry image background overlay -->
+    <div class="background-overlay"></div>
+    
+    <div class="login-container">
+        <!-- Glassmorphism Card -->
+        <div class="login-box glass-card">
+            
+            <div class="logo-area">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <h2>Athena <span>Library</span></h2>
+                <p>Welcome back! Please login to your account.</p>
+            </div>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <input type="email" id="email" placeholder="student@university.edu" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                        <i class="fa-solid fa-eye-slash toggle-password" id="toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-btn" id="login-btn">
+                    <span class="btn-text">Sign In</span>
+                    <span class="spinner" id="spinner" style="display: none;"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                </button>
+            </form>
+
+            <div class="alert-container" id="alert-container"></div>
+            
+            <p class="signup-link">Don't have an account? <a href="#">Register here</a></p>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

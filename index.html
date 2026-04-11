@@ -357,34 +357,39 @@
 
                     <div class="contact-right">
                         <div class="contact-form-container">
-                            <form action="#" class="contact-form">
+                            <form action="https://formsubmit.co/mallikarjunpatil5612@gmail.com" method="POST" class="contact-form">
+                                <!-- Honeypot for spam protection -->
+                                <input type="text" name="_honey" style="display:none">
+                                <!-- Disable captcha for smoother user experience -->
+                                <input type="hidden" name="_captcha" value="false">
+                                
                                 <div class="form-group">
                                     <label>Your Name</label>
                                     <div class="input-wrapper">
                                         <i class="fa-solid fa-user"></i>
-                                        <input type="text" placeholder="John Doe">
+                                        <input type="text" name="name" placeholder="John Doe" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Email Address</label>
                                     <div class="input-wrapper">
                                         <i class="fa-solid fa-envelope"></i>
-                                        <input type="email" placeholder="john@example.com">
+                                        <input type="email" name="email" placeholder="john@example.com" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Subject</label>
                                     <div class="input-wrapper">
                                         <i class="fa-solid fa-tag"></i>
-                                        <input type="text" placeholder="Project Collaboration">
+                                        <input type="text" name="_subject" placeholder="Project Collaboration" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Message</label>
                                     <div class="input-wrapper textarea-wrapper">
                                         <i class="fa-solid fa-comment"></i>
-                                        <textarea placeholder="Tell me about your project or opportunity..."
-                                            rows="4"></textarea>
+                                        <textarea name="message" placeholder="Tell me about your project or opportunity..."
+                                            rows="4" required></textarea>
                                     </div>
                                 </div>
                                 <button type="submit" class="submit-btn gradient-btn">
